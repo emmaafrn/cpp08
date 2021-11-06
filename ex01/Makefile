@@ -1,10 +1,10 @@
 NAME = span
 
-SRCS = span.cpp main.cpp
+SRCS = Span.cpp main.cpp
 
 OBJS = ${SRCS:.cpp=.o}
 
-INC = span.hpp
+INC = Span.hpp
 
 CXX  = clang++
 
@@ -12,7 +12,7 @@ RM  = rm -f
 
 INC_CMP = -I .
 
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g3
 
 all:			$(NAME)
 

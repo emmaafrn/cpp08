@@ -7,11 +7,11 @@
 
 
 template <typename T>
-void	easyfind(T contener, int x){
-	std::vector<int>::iterator it;
-	for(it = contener.begin(); *it != x && it != contener.end(); it++){		
+void	easyfind(T container, int x){
+	typename T::iterator it;
+	for(it = container.begin(); *it != x && it != container.end(); it++){		
 	}
-	if (it == contener.end()){
+	if (it == container.end()){
 		throw std::exception();
 	}
 	else
