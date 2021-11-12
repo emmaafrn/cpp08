@@ -15,7 +15,7 @@ void	easyfind(T container, int x){
 		throw std::exception();
 	}
 	else
-		std::cout << x << " hab been found in the array !" << std::endl;
+		std::cout << x << " has been found in the array !" << std::endl;
 }
 
 

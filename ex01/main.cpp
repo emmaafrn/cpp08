@@ -12,6 +12,15 @@ int main(){
 		
 		std::cout << sp.shortestSpan() << std::endl;
 		std::cout << sp.longestSpan() << std::endl;
+
+		Span an = Span(10000);
+
+		an.addRandom(10000);
+
+		std::cout << an.shortestSpan() << std::endl;
+		std::cout << an.longestSpan() << std::endl;
+		
+		an.addNumber(42);
 	}
 	catch (std::exception & e){
 		std::cout << "Oh no, error" << std::endl;

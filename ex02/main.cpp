@@ -2,6 +2,8 @@
 
 int main(){
 
+	std::cout << "------ SUBJECT TEST ------" << std::endl;
+
 	MutantStack<int> mstack;
 
 	mstack.push(5);
@@ -29,6 +31,26 @@ int main(){
 		std::cout << *it << std::endl;
 		++it;
 	}
+
 	std::stack<int> s(mstack);
+
+	std::cout << "------ EMPTY TEST ------" << std::endl;
+
+	MutantStack<int> estack;
+
+	if (estack.empty())
+		std::cout << "stack is empty" << std::endl;
+	
+	std::cout << "------ PUSH TEST ------" << std::endl;
+
+	for (int i = 0; i < 5; i++){
+		estack.push(i);
+	}
+	it = estack.begin();
+	ite = estack.end();
+	while (it != ite){
+		std::cout << *it << std::endl;
+		++it;
+	}
 	return (0);
 }
